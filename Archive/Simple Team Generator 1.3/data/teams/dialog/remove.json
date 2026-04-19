@@ -1,0 +1,23 @@
+{
+    "type": "multi_action",
+    "title": "Remove Team",
+    "can_close_with_escape": true,
+    "pause": false,
+    "inputs":[
+        {
+            "type": "text",
+            "key": "code",
+            "max_length": 6,
+            "label": "Enter 6-Digit Team-Code here"
+        }
+    ],
+    "actions": [
+        {
+            "label": "Remove Team",
+            "action": {
+                "type": "dynamic/run_command",
+                "template": "function teams:remove {code:$(code),name:true}"
+            }
+        }
+    ]
+}

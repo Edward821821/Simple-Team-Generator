@@ -1,0 +1,34 @@
+{
+    "type": "multi_action",
+    "title": "Join a Team",
+    "can_close_with_escape": true,
+    "pause": false,
+    "body": {
+        "type": "plain_message",
+        "contents": "Join an existing Team via Code. You can ask someone in the Team for the Team-Code. If you enter 0 you leave your Team."
+    },
+    "inputs": [
+        {
+            "type": "text",
+            "key": "code",
+            "max_length": 6,
+            "label": "Enter your 6-Digit Team-Code here"
+        }
+    ],
+    "actions": [
+        {
+            "label": "Show current Team-Code",
+            "action": {
+                "type": "run_command",
+                "command": "function teams:get_code with entity @s"
+            }
+        },
+        {
+            "label": "Join Team",
+            "action": {
+                "type": "dynamic/run_command",
+                "template": "function teams:join2 {code:$(code)}"
+            }
+        }
+    ]
+}

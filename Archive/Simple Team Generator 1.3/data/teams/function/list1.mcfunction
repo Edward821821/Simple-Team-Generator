@@ -1,0 +1,12 @@
+function teams:page_count
+$tellraw @s ["",{text:" List of Teams ",bold:true},{text:" page $(page)/",extra:[{storage:"teams:teams",nbt:"new.pages"}],color:"gray",click_event:{action:"suggest_command",command:"/function teams:list_page {page:<number>}"}}]
+$function teams:list2 with storage teams:teams teams.[$(page1)1]
+$function teams:list2 with storage teams:teams teams.[$(page1)2]
+$function teams:list2 with storage teams:teams teams.[$(page1)3]
+$function teams:list2 with storage teams:teams teams.[$(page1)4]
+$function teams:list2 with storage teams:teams teams.[$(page1)5]
+$function teams:list2 with storage teams:teams teams.[$(page1)6]
+$function teams:list2 with storage teams:teams teams.[$(page1)7]
+$function teams:list2 with storage teams:teams teams.[$(page1)8]
+$function teams:list2 with storage teams:teams teams.[$(page1)9]
+$function teams:list2 with storage teams:teams teams.[$(page)0]

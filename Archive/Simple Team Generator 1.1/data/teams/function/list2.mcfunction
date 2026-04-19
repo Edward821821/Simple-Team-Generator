@@ -1,0 +1,1 @@
+$tellraw @s [{text:"- "},{text:"$(code)  ",color:"#409BFF",click_event:{action:"suggest_command",command:"/trigger Team set $(code)"},bold:true},{text:"",extra:[$(display)],bold:true},{text:"  ($(name))",color:"gray"}]

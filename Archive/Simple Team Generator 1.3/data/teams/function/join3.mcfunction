@@ -1,0 +1,1 @@
+$data merge storage teams:teams {new:{player:{UUID:$(UUID)}}}
