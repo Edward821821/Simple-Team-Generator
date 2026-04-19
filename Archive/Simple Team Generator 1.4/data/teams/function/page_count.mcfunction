@@ -1,0 +1,34 @@
+execute if data storage teams:teams teams.[1].true run data merge storage teams:teams {new:{pages:1}}
+execute if data storage teams:teams teams.[11].true run data merge storage teams:teams {new:{pages:2}}
+execute if data storage teams:teams teams.[21].true run data merge storage teams:teams {new:{pages:3}}
+execute if data storage teams:teams teams.[31].true run data merge storage teams:teams {new:{pages:4}}
+execute if data storage teams:teams teams.[41].true run data merge storage teams:teams {new:{pages:5}}
+execute if data storage teams:teams teams.[51].true run data merge storage teams:teams {new:{pages:6}}
+execute if data storage teams:teams teams.[61].true run data merge storage teams:teams {new:{pages:7}}
+execute if data storage teams:teams teams.[71].true run data merge storage teams:teams {new:{pages:8}}
+execute if data storage teams:teams teams.[81].true run data merge storage teams:teams {new:{pages:9}}
+execute if data storage teams:teams teams.[91].true run data merge storage teams:teams {new:{pages:10}}
+execute if data storage teams:teams teams.[101].true run data merge storage teams:teams {new:{pages:11}}
+execute if data storage teams:teams teams.[111].true run data merge storage teams:teams {new:{pages:12}}
+execute if data storage teams:teams teams.[121].true run data merge storage teams:teams {new:{pages:13}}
+execute if data storage teams:teams teams.[131].true run data merge storage teams:teams {new:{pages:14}}
+execute if data storage teams:teams teams.[141].true run data merge storage teams:teams {new:{pages:15}}
+execute if data storage teams:teams teams.[151].true run data merge storage teams:teams {new:{pages:16}}
+execute if data storage teams:teams teams.[161].true run data merge storage teams:teams {new:{pages:17}}
+execute if data storage teams:teams teams.[171].true run data merge storage teams:teams {new:{pages:18}}
+execute if data storage teams:teams teams.[181].true run data merge storage teams:teams {new:{pages:19}}
+execute if data storage teams:teams teams.[191].true run data merge storage teams:teams {new:{pages:20}}
+execute if data storage teams:teams teams.[201].true run data merge storage teams:teams {new:{pages:21}}
+execute if data storage teams:teams teams.[211].true run data merge storage teams:teams {new:{pages:22}}
+execute if data storage teams:teams teams.[221].true run data merge storage teams:teams {new:{pages:23}}
+execute if data storage teams:teams teams.[231].true run data merge storage teams:teams {new:{pages:24}}
+execute if data storage teams:teams teams.[241].true run data merge storage teams:teams {new:{pages:25}}
+execute if data storage teams:teams teams.[251].true run data merge storage teams:teams {new:{pages:26}}
+execute if data storage teams:teams teams.[261].true run data merge storage teams:teams {new:{pages:27}}
+execute if data storage teams:teams teams.[271].true run data merge storage teams:teams {new:{pages:28}}
+execute if data storage teams:teams teams.[281].true run data merge storage teams:teams {new:{pages:29}}
+execute if data storage teams:teams teams.[291].true run data merge storage teams:teams {new:{pages:30}}
+execute if data storage teams:teams teams.[301].true run data merge storage teams:teams {new:{pages:31}}
+execute if data storage teams:teams teams.[311].true run data merge storage teams:teams {new:{pages:32}}
+
+return run data get storage teams:teams new.pages

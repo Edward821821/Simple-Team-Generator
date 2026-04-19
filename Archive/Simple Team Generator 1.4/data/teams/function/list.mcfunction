@@ -1,0 +1,1 @@
+function teams:list1 {page:1,page1:0}
