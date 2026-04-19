@@ -1,0 +1,18 @@
+{
+    "pack": {
+        "pack_format": 81,
+        "min_format": 80,
+        "max_format": 94,
+        "supported_formats": [80,94],
+        "description": [
+            {
+                "text": "Simple ingame Team Creator",
+                "color": "blue"
+            },
+            {
+                "text": "\nby Edward821821",
+                "color": "green"
+            }
+        ]
+    }
+}

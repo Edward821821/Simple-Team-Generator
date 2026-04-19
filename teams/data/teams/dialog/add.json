@@ -1,0 +1,182 @@
+{
+    "type": "multi_action",
+    "title": "Add new Team",
+    "can_close_with_escape": true,
+    "pause": false,
+    "inputs": [
+        {
+            "type": "text",
+            "key": "name",
+            "label": "Display-Name of the Team (can include A-Z a-z 0-9 +*'#(){}[]/!,.;:-_=? and spaces)",
+            "width": 411
+        },
+        {
+            "type": "text",
+            "key": "short",
+            "label": "Name of the Team for Code (can only include A-Z a-z 0-9 _)",
+            "width": 306
+        },
+        {
+            "type": "single_option",
+            "key": "color",
+            "label": "The Color of the Team",
+            "width": 256,
+            "options": [
+                {
+                    "id": "white",
+                    "display": {
+                        "text": "White",
+                        "color": "white",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "gray",
+                    "display": {
+                        "text": "Gray",
+                        "color": "gray",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "dark_gray",
+                    "display": {
+                        "text": "Dark Gray",
+                        "color": "dark_gray",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "black",
+                    "display": {
+                        "text": "Black",
+                        "color": "black",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "dark_red",
+                    "display": {
+                        "text": "Dark Red",
+                        "color": "dark_red",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "red",
+                    "display": {
+                        "text": "Red",
+                        "color": "red",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "gold",
+                    "display": {
+                        "text": "Gold",
+                        "color": "gold",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "yellow",
+                    "display": {
+                        "text": "Yellow",
+                        "color": "yellow",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "green",
+                    "display": {
+                        "text": "Green",
+                        "color": "green",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "dark_green",
+                    "display": {
+                        "text": "Dark Green",
+                        "color": "dark_green",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "dark_aqua",
+                    "display": {
+                        "text": "Dark Aqua",
+                        "color": "dark_aqua",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "aqua",
+                    "display": {
+                        "text": "Aqua",
+                        "color": "aqua",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "blue",
+                    "display": {
+                        "text": "Blue",
+                        "color": "blue",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "dark_blue",
+                    "display": {
+                        "text": "Dark Blue",
+                        "color": "dark_blue",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "dark_purple",
+                    "display": {
+                        "text": "Dark Purple",
+                        "color": "dark_purple",
+                        "bold": true
+                    },
+                    "initial": false
+                },
+                {
+                    "id": "light_purple",
+                    "display": {
+                        "text": "Light Purple",
+                        "color": "light_purple",
+                        "bold": true
+                    },
+                    "initial": false
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "label": "Create Team",
+            "action": {
+                "type": "dynamic/run_command",
+                "template": "function teams:add1 {name:\"$(name)\",short:\"$(short)\",color:\"$(color)\"}"
+            },
+            "width": 256
+        }
+    ]
+}
